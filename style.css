@@ -85,7 +85,7 @@ nav ul li {
   color: black;
   margin: 15px 0;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   border-radius: 15px;
 }
 
