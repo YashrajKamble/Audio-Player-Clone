@@ -119,3 +119,50 @@ nav ul li {
   opacity: 0;
   transition: opacity 0.4s ease-in;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #1ed760;
+    /* background-color: red; */
+  }
+  .bottom {
+    position: sticky;
+    height: 110px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+  }
+  .icons {
+    margin-top: 30px;
+  }
+  #myProgressBar {
+    margin-top: 10px;
+    width: 80vw;
+    cursor: pointer;
+  }
+  .songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: "varela Round", "sans-sarif";
+  }
+
+  #masterSongName {
+    padding-left: 25vw;
+  }
+  #image {
+    display: none;
+  }
+  .songItem {
+    justify-content: space-between;
+  }
+
+  .container {
+    width: 80%;
+  }
+  .songName {
+    padding-left: 20px;
+  }
+}
