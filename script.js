@@ -12,32 +12,32 @@ let songItems = Array.from(document.getElementsByClassName("songItem"));
 // songs details
 songs = [
   {
-    songsName: "warrio",
+    songsName: "Warriyo-Mortals",
     filePath: "songs/2.mp3",
     coverPath: "covers/2.jpg",
   },
   {
-    songsName: "cielo",
+    songsName: "Cielo-Huma-Huma",
     filePath: "songs/3.mp3",
     coverPath: "covers/3.jpg",
   },
   {
-    songsName: "DEAF KEV",
+    songsName: "DEAF KEV - Invincible",
     filePath: "songs/4.mp3",
     coverPath: "covers/4.jpg",
   },
   {
-    songsName: "heaven &",
+    songsName: "Different Heaven & EH!DE - My Heart",
     filePath: "songs/5.mp3",
     coverPath: "covers/5.jpg",
   },
   {
-    songsName: "janji heroes",
+    songsName: "Janji - Heroes Tonight",
     filePath: "songs/6.mp3",
     coverPath: "covers/6.jpg",
   },
   {
-    songsName: "rabba",
+    songsName: "Cartoon, Jéja - On & On",
     filePath: "songs/7.mp3",
     coverPath: "covers/7.jpg",
   },
@@ -129,7 +129,7 @@ document.getElementById("previous").addEventListener("click", () => {
   if (songIndex <= 0) {
     songIndex = 0;
   } else {
-    songIndex += 1;
+    songIndex -= 1;
   }
   audioElement.src = `songs/${songIndex + 1}.mp3`;
   masterSongName.innerHTML = songs[songIndex].songsName;

@@ -3,6 +3,9 @@
 
 body {
   background-color: antiquewhite;
+  background-image: url(/bcg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 * {
@@ -13,11 +16,16 @@ body {
 nav {
   font-family: "Ubuntu", sans-serif;
 }
-
+#home, #about , .brand{
+  cursor: pointer;
+}
+ #home:hover, #about:hover{
+  text-decoration: underline;
+}
 nav ul {
   display: flex;
   list-style-type: none;
-  height: 46px;
+  height: 44px;
   background-color: black;
   align-items: center;
   color: white;
@@ -54,6 +62,7 @@ nav ul li {
   background-image: url(/bg.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  opacity: 0.78;
 }
 
 .bottom {
